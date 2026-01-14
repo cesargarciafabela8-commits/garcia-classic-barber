@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Garcia Classic Barber</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+  --rojo:#E24C3B;
+  --crema:#FBF3EF;
+  --azul:#0088E0;
+}
+
+body{
+  margin:0;
+  font-family:'Segoe UI',sans-serif;
+  background:var(--crema);
+  color:#333;
+}
+
+header{
+  background:#000;
+  color:white;
+  padding:30px 20px;
+  text-align:center;
+}
+
+header h1{
+  margin:0;
+  font-size:2.2em;
+}
+
+header p{
+  margin-top:10px;
+  font-style:italic;
+}
+
+section{
+  max-width:900px;
+  margin:auto;
+  padding:30px 20px;
+}
+
+h2{
+  color:var(--azul);
+  border-bottom:3px solid var(--rojo);
+  display:inline-block;
+  padding-bottom:5px;
+}
+
+.price{
+  display:flex;
+  justify-content:space-between;
+  padding:8px 0;
+  border-bottom:1px dashed #ccc;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:15px;
+  padding:12px 20px;
+  background:var(--rojo);
+  color:white;
+  text-decoration:none;
+  border-radius:6px;
+  font-weight:bold;
+}
+
+.btn-blue{
+  background:var(--azul);
+}
+
+iframe{
+  width:100%;
+  height:350px;
+  border:0;
+  margin-top:15px;
+}
+
+footer{
+  background:#111;
+  color:white;
+  text-align:center;
+  padding:20px;
+  margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Garcia Classic Barber</h1>
+  <p>Un buen corte habla por ti</p>
+</header>
+
+<section>
+  <h2>Horario</h2>
+  <p>
+    Lunes a Sábado: <b>12:00 pm – 8:00 pm</b><br>
+    Domingo: <b>10:00 am – 3:00 pm</b><br>
+    <b>Cerrado los martes</b>
+  </p>
+</section>
+
+<section>
+  <h2>Cortes</h2>
+  <div class="price"><span>Corte de cabello</span><span>$180</span></div>
+  <div class="price"><span>Corte + diseño sencillo</span><span>$200</span></div>
+  <div class="price"><span>Diseño especial</span><span>$50 – $80</span></div>
+</section>
+
+<section>
+  <h2>Barba</h2>
+  <div class="price"><span>Arreglo de barba sencillo</span><span>$140</span></div>
+  <div class="price"><span>Perfilado con navaja</span><span>$180</span></div>
+</section>
+
+<section>
+  <h2>Niños</h2>
+  <div class="price"><span>Corte niño</span><span>$160</span></div>
+</section>
+
+<section>
+  <h2>Mascarilla Facial</h2>
+  <div class="price">
+    <span>Mascarilla facial básica (limpieza y frescura)</span>
+    <span>$120</span>
+  </div>
+</section>
+
+<section>
+  <h2>Reservaciones</h2>
+  <p>Agenda tu cita fácilmente</p>
+  <!-- REEMPLAZA ESTE LINK CUANDO CREES TU GOOGLE FORM -->
+  <a class="btn" href="https://forms.google.com" target="_blank">
+    Reservar ahora
+  </a>
+</section>
+
+<section>
+  <h2>Ubicación</h2>
+  <a class="btn btn-blue" target="_blank"
+     href="https://maps.app.goo.gl/kWYoBQyo75eZqFRf7">
+    Cómo llegar
+  </a>
+
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2712.844751061316!2d-100.2153439!3d25.7976141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662ed93c45ba497%3A0xcc24d1681e9ca6e9!2sGarcia%20Classic%20Barber!5e1!3m2!1ses!2smx!4v1768409626488">
+  </iframe>
+</section>
+
+<section>
+  <h2>Contacto</h2>
+  <a class="btn"
+     href="https://wa.me/528115919877"
+     target="_blank">
+    Enviar mensaje por WhatsApp
+  </a>
+</section>
+
+<footer>
+  <p>© 2026 Garcia Classic Barber</p>
+</footer>
+
+</body>
+</html>
