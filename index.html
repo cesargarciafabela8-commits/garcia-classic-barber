@@ -1,70 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Garcia Classic Barber</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Garcia Classic Barber</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #FBF3EF;
-      color: #333;
-    }
-
-    section {
-      padding: 30px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    h2 {
-      color: #0088E0;
-      border-bottom: 2px solid #E24C3B;
-      padding-bottom: 5px;
-    }
-
-    footer {
-      background-color: #E24C3B;
-      color: white;
-      text-align: center;
-      padding: 15px;
-    }
-  </style>
-</head>
-
-<body>
-
-<header>
-  <img 
-    src="banner.png"
-    alt="Garcia Classic Barber"
-    style="
-      width:100%;
-      max-height:350px;
-      object-fit:cover;
-      display:block;
-    ">
-</header>
-
+<style>
+body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   background-color: #FBF3EF;
   color: #333;
 }
 
-header {
-  background-color: #E24C3B;
-  color: white;
-  padding: 30px;
-  text-align: center;
+header img {
+  width: 100%;
+  max-height: 360px;
+  object-fit: cover;
+  display: block;
 }
 
 section {
-  padding: 30px;
   max-width: 900px;
   margin: auto;
+  padding: 30px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.slogan {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 30px;
 }
 
 h2 {
@@ -73,26 +43,22 @@ h2 {
   padding-bottom: 5px;
 }
 
-.price-list p {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px dashed #ccc;
-  padding: 6px 0;
-}
-
 .button {
   display: inline-block;
   margin: 10px 5px;
-  padding: 15px 25px;
-  background-color: #0088E0;
-  color: white;
+  padding: 12px 20px;
   text-decoration: none;
-  border-radius: 8px;
+  color: white;
+  border-radius: 6px;
   font-weight: bold;
 }
 
-.button.whatsapp {
+.whatsapp {
   background-color: #25D366;
+}
+
+.maps {
+  background-color: #E24C3B;
 }
 
 footer {
@@ -100,6 +66,7 @@ footer {
   color: white;
   text-align: center;
   padding: 15px;
+  margin-top: 30px;
 }
 </style>
 </head>
@@ -107,83 +74,49 @@ footer {
 <body>
 
 <header>
-  <h1>Garcia Classic Barber</h1>
-  <p>Estilo • Precisión • Clase</p>
+  <img src="banner.png" alt="Garcia Classic Barber">
 </header>
 
 <section>
+  <h1>Garcia Classic Barber</h1>
+  <p class="slogan">Donde cada corte habla por ti</p>
+
   <h2>Horario</h2>
   <p>
     Lunes a Sábado: 12:00 pm – 8:00 pm<br>
     <strong>Cerrado martes</strong><br>
     Domingo: 10:00 am – 3:00 pm
   </p>
-</section>
 
-<section class="price-list">
-  <h2>Cortes</h2>
-  <p><span>Corte de cabello</span><span>$180</span></p>
-  <p><span>Corte + diseño sencillo</span><span>$200</span></p>
-  <p><span>Diseño especial</span><span>$50 – $80</span></p>
+  <h2>Servicios</h2>
+  <ul>
+    <li>Corte de cabello — $180</li>
+    <li>Corte + diseño sencillo — $200</li>
+    <li>Diseños especiales — $50 a $80</li>
+    <li>Arreglo de barba — $140</li>
+    <li>Mascarilla facial — $50</li>
+  </ul>
 
-  <h2>Barba</h2>
-  <p><span>Arreglo de barba sencillo</span><span>$140</span></p>
-  <p><span>Perfilado de barba con navaja</span><span>$180</span></p>
-
-  <h2>Niños</h2>
-  <p><span>Corte niño</span><span>$160</span></p>
-
-  <h2>Mascarilla Facial</h2>
-  <p><span>Mascarilla facial básica</span><span>$120</span></p>
-</section>
-
-<section>
-  <h2>Reservaciones</h2>
-
-  <!-- PEGA AQUÍ TU LINK DE GOOGLE FORMS -->
-  <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSfsZqqfLQorojRELJrgBz6olU7TvkTTcVq_-xya7Q_KYP9RFg/viewform?usp=header" target="_blank">
-    Reservar Cita
-  </a>
-
-  <a class="button whatsapp" 
-     href="https://wa.me/528115919877?text=Hola%20quiero%20agendar%20una%20cita%20en%20Garcia%20Classic%20Barber"
-     target="_blank">
-     WhatsApp
-  </a>
-</section>
-<section>
-  <h2>Ubicación</h2>
-
-  <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2712.844751061316!2d-100.21534390000001!3d25.7976141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662ed93c45ba497%3A0xcc24d1681e9ca6e9!2sGarcia%20Classic%20Barber!5e1!3m2!1sen!2smx!4v1768409626488!5m2!1sen!2smx"
-    width="100%" 
-    height="320" 
-    style="border:0; border-radius:12px;"
-    allowfullscreen=""
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
-<div style="margin-top:15px; text-align:center;">
+  <h2>Contacto</h2>
   <a 
-    href="https://www.google.com/maps/dir/?api=1&destination=Garcia+Classic+Barber"
-    target="_blank"
-    style="
-      display:inline-block;
-      background-color:#0088E0;
-      color:white;
-      padding:12px 25px;
-      border-radius:10px;
-      text-decoration:none;
-      font-weight:bold;
-    ">
-    📍 Cómo llegar
+    class="button whatsapp"
+    href="https://wa.me/5218112345678
+"
+    target="_blank">
+    WhatsApp
   </a>
-</div>
 
+  <a 
+    class="button maps"
+    href="https://maps.app.goo.gl/kWYoBQyo75eZqFRf7"
+    target="_blank">
+    Cómo llegar
+  </a>
 </section>
 
 <footer>
   <p>© 2026 Garcia Classic Barber</p>
+  <p>Instagram: @garciaclassicbarber</p>
 </footer>
 
 </body>
